@@ -1,0 +1,6 @@
+- name: Print parameters from parameter store
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print parameters from parameter store
+      debug: msg=" {{ lookup('amazon.aws.aws_ssm', 'sadguru', region='us-eas+t-1 ' ) }}"
