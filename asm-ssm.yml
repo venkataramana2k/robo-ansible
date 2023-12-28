@@ -4,4 +4,4 @@
   tasks:
     - name: Print parameters from parameter store
       debug:
-        msg: parameter- {{ lookup('amazon.aws.aws_ssm', 'test.test', region='us-eas+t-1 ' ) }}
+        msg: parameter- {{ lookup('amazon.aws.aws_ssm', 'test.test', region='us-east-1 ' ) }}
